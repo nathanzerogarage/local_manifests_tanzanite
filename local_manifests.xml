@@ -7,7 +7,7 @@
 
     <remote name="nx"
             fetch="https://github.com/nathanzerogarage" 
-            revision="lineage-22.2"/>
+            revision="lineage-23.0"/>
 
     <!-- Repos -->
     <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="nx" />
