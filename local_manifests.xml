@@ -2,26 +2,38 @@
 <manifest>
 <!-- Generated using sounddrill31/actions_generate_local_manifests -->
 
-    <remote name="TogoFire" 
-            fetch="https://github.com/TogoFire" />
-
     <remote name="nx"
-            fetch="https://github.com/nathanzerogarage" 
-            revision="lineage-23.0"/>
+            fetch="https://github.com/nathanzerogarage" />
+
+    <remote name="millenium"
+            fetch="https://github.com/MillenniumOSS" />
+
+    <remote name="switchoff"
+            fetch="https://github.com/swiitch-OFF-Lab" />
+
+    <remote name="ax"
+            fetch="https://github.com/AxionAOSP" />
 
     <!-- Repos -->
-    <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="nx" revision="lineage-22.2" />
-    <project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="nx" />
+    <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="nx" revision="vanilla" />
+    <project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="nx" revision="lineage-23.2" />
 
     <!-- Vendor -->
-    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="nx" />
-    <project path="vendor/xiaomi/tanzanite" name="proprietary_vendor_xiaomi_tanzanite" remote="nx" />
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="nx" revision="lineage-23.2" />
+    <project path="vendor/xiaomi/tanzanite" name="proprietary_vendor_xiaomi_tanzanite" remote="nx" revision="sixteen-qpr2" />
+    <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="millenium" revision="sixteen-qpr2" />
 
     <!-- Hardware -->
-    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="nx" />
-    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="nx" />
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="nx" revision="lineage-23.1" />
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="nx" revision="lineage-23.1" />
+
+    <!-- Dolby -->
+    <project path="hardware/dolby" name="hardware_dolby" remote="switchoff" revision="sony-1.5" />
+    <project path="packages/apps/DolbyUI" name="packages_apps_DolbyUI" remote="switchoff" revision="16.0" />
 
     <!-- Other Repos -->
-    <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="TogoFire" revision="v4a" />
+    <remove-project path="external/wpa_supplicant_8" />
+    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="nx" revision="lineage-23.1" />
+    <project path="packages/apps/ViPER4AndroidFX" name="android_packages_apps_ViPER4AndroidFX" remote="ax" revision="v4a" />
 
 </manifest>
