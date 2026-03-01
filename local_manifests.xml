@@ -14,13 +14,16 @@
     <remote name="ax"
             fetch="https://github.com/AxionAOSP" />
 
+    <remote name="codeberg"
+            fetch="https://codeberg.org/nathannxx" />
+
     <!-- Repos -->
     <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="nx" revision="vanilla-16-qpr2" />
     <project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="nx" revision="lineage-23.2" />
 
     <!-- Vendor -->
     <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="nx" revision="lineage-23.2" />
-    <project path="vendor/xiaomi/tanzanite" name="proprietary_vendor_xiaomi_tanzanite" remote="nx" revision="sixteen-qpr2" />
+    <project path="vendor/xiaomi/tanzanite" name="proprietary_vendor_xiaomi_tanzanite" remote="codeberg" revision="sixteen-qpr2" />
     <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="millenium" revision="sixteen-qpr2" />
 
     <!-- Hardware -->
