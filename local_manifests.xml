@@ -11,9 +11,6 @@
     <remote name="halcyon-blobs"
             fetch="https://git.hlcyn.org/halcyonlv" />
 
-    <remote name="codeberg"
-            fetch="https://codeberg.org/nathannxx" />
-
     <!-- Repos -->
     <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="nx" revision="vanilla" />
     <project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="nx" revision="lineage-23.2" />
