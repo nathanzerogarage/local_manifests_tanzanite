@@ -20,7 +20,7 @@
 
     <!-- Vendor -->
     <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="halcyon" revision="16.2" />
-    <project path="vendor/xiaomi/tanzanite" name="proprietary_vendor_xiaomi_tanzanite" remote="codeberg" revision="sixteen-qpr2" />
+    <project path="vendor/xiaomi/tanzanite" name="vendor_xiaomi_tanzanite" remote="halcyon-blobs" revision="16.2" />
     <project path="vendor/mediatek/ims" name="vendor_mediatek_ims" remote="halcyon-blobs" revision="16.2" />
 
     <!-- Hardware -->
