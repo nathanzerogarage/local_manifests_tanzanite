@@ -8,6 +8,9 @@
     <remote name="nc-x"
             fetch="https://codeberg.org/nathannxx" />
 
+    <remote name="nx-priv"
+            fetch="git@github.com:imnathanzero" />
+
     <!-- Repos -->
     <project path="device/xiaomi/tanzanite-kernel" name="android_device_xiaomi_tanzanite-kernel" remote="nx" revision="vanilla" />
     <project path="device/xiaomi/tanzanite" name="android_device_xiaomi_tanzanite" remote="nx" revision="lineage-22.2" />
@@ -23,5 +26,8 @@
     <!-- Other Repos -->
     <remove-project path="external/wpa_supplicant_8" />
     <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="nx" revision="15.2" />
+
+    <!-- Keep this repo away from your dogs plz -->
+    <!-- project path="vendor/private" name="signkeys" remote="nx-priv" revision="anyrom" /-->
 
 </manifest>
